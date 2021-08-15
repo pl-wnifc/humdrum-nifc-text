@@ -1,0 +1,74 @@
+
+<style>
+
+div.button {
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #bb0000;
+	color: white;
+	white-space: pre;
+	cursor: pointer;
+}
+
+div.button:hover {
+	background-color: #00cc00;
+}
+
+</style>
+
+<div onclick="copyToClipboard()" class="button">Copy to Clipboard</div>
+
+
+<script>
+
+//////////////////////////////
+//
+// copyToClipboard --
+// 
+
+function copyToClipboard() {
+	let parameters = document.querySelectorAll(".parameter");
+	let output = "";
+	output += "@@BEGIN: ENTRY\n";
+	let value;
+	let key;
+	for (let i=0; i<parameters.length; i++) {
+		let element = parameters[i];
+		if (element.nodeName == "INPUT") {
+			value = element.value;
+		} else if (element.nodeName == "SELECT") {
+			value = element.value;
+		} else if (element.nodeName == "TEXTAREA") {
+			value = element.value;
+		}
+		key = element.id.toUpperCase();
+		if (key === "PAGES" || key === "SCANS") {
+			output += `@${key}:\t\t${value}\n`;
+		} else {
+			output += `@${key}:\t${value}\n`;
+		}
+	}
+	output += "@@END: ENTRY\n";
+	copyToClipboard2(output);
+}
+
+
+//////////////////////////////
+//
+// copyToClipboard --
+//
+
+function copyToClipboard2(output) {
+	// console.log("Copying", output, "to clipboard");
+	let element = document.createElement("textarea");
+	element.value = output;
+	document.body.appendChild(element);
+	element.select();
+	document.execCommand("copy");
+	document.body.removeChild(element);
+};
+
+</script>
+
+

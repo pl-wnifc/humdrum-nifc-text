@@ -1,0 +1,30 @@
+
+* {
+	font-size: 1.25rem;
+
+}
+
+input.parameter {
+	width:800px;
+}
+
+textarea {
+	width: 800px;
+	height: 400px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dddddd;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #dddddd;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #dddddd;
+}
+
+
+
