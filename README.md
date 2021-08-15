@@ -13,7 +13,7 @@ Below is the list of necessary fields for each file,
 - filename/databes of editorial transcription of thet text 
 - filenames/repository ID's for scans of the source
 
-## Editorial trenscription
+## Editorial transcription
 
 - Location (RISM siglum)
 - shelfmark of the source
