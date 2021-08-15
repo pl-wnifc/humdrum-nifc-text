@@ -11,6 +11,7 @@ Below is the list of necessary fields for each file,
 - name of krn file to which text refers to
 - filename/database ID
 - filename/databes of editorial transcription of thet text 
+- filenames/repository ID's for scans of the source
 
 ## Editorial trenscription
 
@@ -21,3 +22,4 @@ Below is the list of necessary fields for each file,
 - name of krn file to which text refers to
 - filename/database ID
 - filename/databes of diplomatic transcription of thet text 
+- filenames/repository ID's for scans of the source
