@@ -5,17 +5,18 @@
 <tr>
 	<td>
 		Location (RISM siglum)
+		<!-- For POPC-2 we need only pl-stab and pl-wn - keep the rest for the future -->
 	</td>
 	<td>
 		<select id="rism_siglum" class="parameter">
 			<option disabled selected value="">Choose library</option>
-			<option value="pl-cz">pl-cz</option>
+			<!-- <option value="pl-cz">pl-cz</option>
 			<option value="pl-kk">pl-kk</option>
 			<option value="pl-kozmzk">pl-kozmzk</option>
-			<option value="pl-sa">pl-sa</option>
+			<option value="pl-sa">pl-sa</option> -->
 			<option value="pl-stab">pl-stab</option>
 			<option value="pl-wn">pl-wn</option>
-			<option value="pl-wtm">pl-wtm</option>
+			<!-- <option value="pl-wtm">pl-wtm</option> -->
 		</select>
 	</td>
 </tr>
@@ -24,6 +25,7 @@
 <tr>
 	<td>
 		Shelfmark
+		<!-- This should be a list containig: St A, St B, St C, St D, St E, SD XVI.Qu.273 -->
 	</td>
 	<td>
 		<input id="shelfmark" type="text" class="parameter" placeholder="Shelfmark">
@@ -42,6 +44,7 @@
 <tr>
 	<td>
 		Encoder name
+		<!-- Eventually this could be a list after we know who's involved -->
 	</td>
 	<td>
 		<input id="encoder_name" type="text" class="parameter" placeholder="Encoder name">
